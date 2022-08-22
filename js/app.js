@@ -1,21 +1,20 @@
 import Formulario from "./classForm.js"
 
 let codigo  = document.getElementById("codigo")
-formulario.addEventListener("submit", crearClase);
 
 codigo.addEventListener(blur,()=>{validarCodigo(codigo)} )
 
 function validarCodigo(input){
     //validar con expresiones regulares
     let patron = /^[0-9]{1,3}$/
-
+    
     if(patron.test(input.value)){
         input.className = "form-control is-valid"
     }else{
         input.className = "form-control is-invalid"
-    }
-
+    }    
 }
+formulario.addEventListener("submit", crearClase);
 
 
 function crearClase(e) {
