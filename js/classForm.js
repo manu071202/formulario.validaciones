@@ -1,5 +1,4 @@
-
-export  class Formulario {
+export class Formulario {
     constructor(codigo,titulo,descripcion,imagen,genero){
         this.codigo=codigo;
         this.titulo=titulo;

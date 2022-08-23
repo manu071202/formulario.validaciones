@@ -51,7 +51,7 @@
 
                 <article class="row">
                   <aside class="col-12 col-md-6">
-                    <form class="bg-light p-3" >
+                    <form class="bg-light p-3" id="form" >
                       <div class="mb-3">
                         <label >Codigo</label>
                         <input type="number" id="codigo" class="form-control "/>
@@ -68,15 +68,17 @@
                       </div>
                       <div class="mb-3">
                         <label >Imagen</label>
+                        <input type="text" id="imagen" class="form-control" />
                         
-                        <img src="" id="imagen" class="form-control">
-                        </img>
                       </div>
                     
                       <div class="mb-3">
-                        <label  >Genero </label
-                        >
-                        <input type="text" id="genero" class="form-control" />
+                        <label  >Genero </label> 
+                        <select id="genero" class="form-control">
+                          <option value="">Seleccione una opcion</option>
+                          <option value="H">Hombre</option>
+                          <option value="M">Mujer</option>
+                        </select>    
                       </div>
                       <button class="btn btn-primary" type="submit">Enviar</button>
                       
